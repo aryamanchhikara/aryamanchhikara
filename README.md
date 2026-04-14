@@ -1,4 +1,4 @@
-# Aryaman World
+# Aryaman Chhikara
 
 Static multi-page site designed for GitHub Pages.
 
