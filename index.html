@@ -1,1 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aryaman Chhikara</title>
+    <meta
+      name="description"
+      content="A personal world of current obsessions, in-progress ideas, fashion, music, art, and movies."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/site.css" />
+  </head>
+  <body class="home-page">
+    <div class="site-shell">
+      <canvas id="scene"></canvas>
+      <div class="noise-layer"></div>
+
+      <header class="topbar">
+        <a class="wordmark" href="./index.html">Aryaman Chhikara</a>
+        <nav class="topnav" aria-label="Primary">
+          <a href="./pages/in-progress.html">In Progress</a>
+          <a href="./pages/fashion.html">Fashion</a>
+          <a href="./pages/music.html">Music</a>
+          <a href="./pages/art.html">Art</a>
+          <a href="./pages/movies.html">Movies</a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="hero">
+          <div class="hero-copy">
+            <p class="eyebrow">Personal Archive / Living Moodboard</p>
+            <h1>
+              Ahoy! Welcome to my homepage! 
+              <span>My taste , movie references, and what I am building right now.</span>
+            </h1>
+            <p class="hero-text">
+              I keep this updated. All the stuff I am into is here. Acts like a great place to archive everything.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-solid" href="#preview-grid">Enter the archive</a>
+              <a class="button button-ghost" href="./pages/in-progress.html">See what is moving</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="manifesto">
+          <div>
+            <p class="section-label">What this place is</p>
+            <p class="manifesto-text">
+              Not a formal portfolio. More like a current. A place for what is unfinished,
+              what is influencing me, and what keeps pulling me back in.
+            </p>
+          </div>
+          <div class="manifesto-notes">
+            <p>Textural, cinematic, and a little haunted.</p>
+            <p>Built to let visitors drift from the homepage into each world.</p>
+          </div>
+        </section>
+
+        <section class="preview-grid" id="preview-grid" aria-label="Section previews"></section>
+      </main>
+    </div>
+
+    <script type="module" src="./scripts/main.js"></script>
+  </body>
+</html>
 
