@@ -52,10 +52,16 @@ if (mount && section) {
     `
     : "";
 
+  const highlightsMarkup = section.highlights?.length
+    ? `<ul class="detail-highlights">
+        ${section.highlights.map((h) => `<li>${h}</li>`).join("")}
+      </ul>`
+    : "";
+
   const detailVisualMarkup = section.previewImage
     ? `
       <div class="detail-image detail-image-photo">
-        <img src="${section.previewImage.replace("..", ".")}" alt="${section.title} page image." />
+        <img src="${section.previewImage}" alt="${section.title} page image." />
       </div>
     `
     : `
@@ -108,6 +114,7 @@ if (mount && section) {
         <p class="eyebrow">${section.eyebrow}</p>
         <h1>${section.title}</h1>
         <p class="detail-text">${section.detail}</p>
+        ${highlightsMarkup}
         ${badgeMarkup}
         <a class="button button-solid" href="../index.html#preview-grid">Back to homepage peeks</a>
       </div>
