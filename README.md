@@ -1,6 +1,6 @@
 # Aryaman Chhikara
 
-Static multi-page site designed for GitHub Pages.
+Engineering Solutions for Enterprise Systems
 
 ## Structure
 
